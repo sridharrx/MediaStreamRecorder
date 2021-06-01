@@ -56,7 +56,7 @@ function MediaStreamRecorder(mediaStream) {
 
         var self = this;
         mediaRecorder.ondataavailable = function(data) {
-            mediaRecorder.blobs.push(data);
+            //mediaRecorder.blobs.push(data);
             self.ondataavailable(data);
         };
         mediaRecorder.onstop = this.onstop;
